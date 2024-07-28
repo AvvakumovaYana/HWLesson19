@@ -2,6 +2,7 @@ package tests;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
@@ -13,7 +14,7 @@ import static io.qameta.allure.Allure.step;
 public class AstondevsRuTest extends TestBase {
 
     @DisplayName("Проверка разделов меню на главной странице")
-    @org.junit.jupiter.api.Test
+    @Test
     void menuOnMainPageTest() {
         step("Открываем главную страницу сайта", () -> {
             open("/");

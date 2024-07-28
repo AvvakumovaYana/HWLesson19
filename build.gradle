@@ -41,6 +41,10 @@ dependencies {
     )
 }
 
+test {
+    useJUnitPlatform()
+}
+
 tasks.withType(Test) {
     useJUnitPlatform()
     systemProperties(System.getProperties())
@@ -55,6 +59,6 @@ tasks.withType(Test) {
 
 task main_test(type: Test) {
     useJUnitPlatform {
-        includeTags("api")
+        includeTags("main")
     }
 }
